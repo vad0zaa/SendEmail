@@ -65,7 +65,9 @@
         android:layout_below="@+id/sendMessageBtn"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="87dp" />
+        android:layout_marginTop="20dp"
+        android:hint="event title"
+        />
 
     <Button
         android:layout_width="wrap_content"
@@ -77,5 +79,27 @@
         android:layout_alignParentStart="true"
         android:onClick="addEvent"/>
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextDial"
+        android:layout_below="@+id/addEventBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:hint="tel number"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dial"
+        android:id="@+id/dialBtn"
+        android:layout_below="@+id/editTextDial"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="dial"/>
 
 </RelativeLayout>
